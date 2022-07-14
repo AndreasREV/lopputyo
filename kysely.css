@@ -1,0 +1,145 @@
+.input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+.label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:white;
+}
+
+/* Style the submit button */
+.input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* sisällön tyyli */
+.container {
+  border-radius: 5px;
+  background-color: none;
+  padding: 20px;
+  width:20%;
+  margin-left:140px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* putstataan floatit */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* responsiivisuus */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+.h3 {margin-left:0px;}
+.h1 {font-size:20px; text-align:center;}
+
+
+.footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    position:fixed;
+	width:98%;
+	margin-top:320px;
+	text-align:center;
+}
+
+
+
+.wrap {
+	display:flex;  flex-direction:row }
+	
+	
+	@media only screen and (max-width:1300px) {.wrap
+   {
+        flex-flow:wrap; 
+    }
+	}
+
+.navigation a:hover { background-color:black;
+color:black;
+}
+.navigation a:active {
+  background-color: #4CAF50;
+  color: white;
+}
+@media all and (max-width: 1000px) {
+  .navigation {
+	flex-direction:row;
+    justify-content: space-around;
+	
+  }
+}
+
+
+@media all and (max-width: 500px) {
+  .navigation {
+
+    flex-direction: row; margin-top:30px; 
+  }
+}
+
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+
+
+.formi {width:100px; height:15%; border: 3px solid; }

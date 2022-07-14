@@ -1,0 +1,126 @@
+body {
+  font-family: Arial;
+  padding: 0px;
+ 	background-color:#54575c;
+}
+
+/* headeri */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/0/0b/Mountains_%26_Clouds.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.header h1 {
+  font-size: 50px;
+  text-align:left;
+  color:orange;
+
+}
+
+/* navibaari */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* navi linkit */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px;
+  width:156px;
+}
+
+/* hover väri */
+.topnav a:hover {
+  background-color: green;
+  color: black;
+}
+
+/* sisallon tyylit */
+.sisalto {
+
+  padding: 135px;
+  margin-top: 20px;
+  margin-left:50px;
+  color:orange;
+  font-family:sans-serif;
+  font-weight:bold;
+  font-size:15px;
+}
+
+/* Footer */
+.footer {
+  padding: 0px;
+  text-align: center;
+  background: #333;
+  margin-top: 0px;
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:150px;
+   color:violet;
+}
+/* responsiivisuus 800px tai pienemillä */
+@media screen and (max-width: 800px) {
+	body,.sisalto,.footer,.topnav
+ {   
+    width: auto;
+	font-size:80%;
+  }
+}
+/* footeri pois mobiilissa */
+@media screen and (max-width: 800px) {
+	.footer
+ {   
+    width: auto;
+	display:none;
+	font-size:80%;
+  }
+}
+/* responsiivisuus 400px tai pienemillä */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: auto;
+	font-size:80%;
+  }
+}
+
+.sivuvalikko {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background-color: #333;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+
+}
+
+.sivuvalikko2 a {
+  display: block;
+  color: white;
+  padding:30px;
+  text-decoration: none;
+}
+
+.sivuvalikko2 a.active {
+  background-color: orange;
+  color: green;
+}
+
+.sivuvalikko2 a:hover:not(.active) {
+  background-color: green;
+  color: white;
+}
+
